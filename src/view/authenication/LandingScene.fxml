@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.authenicationController.LoginController">
+    <stylesheets>
+        <URL value="@authenication.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="210.0" fitWidth="800.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/HeaderThumb.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="262.0" layoutY="258.0" text="Messages Demo" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="258.0">
+         <font>
+            <Font name="Chalkduster" size="30.0" />
+         </font>
+      </Label>
+      <Text fill="#726f6f" layoutX="212.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to our app. This is a demo. Need a slogan here =)))" textAlignment="CENTER" wrappingWidth="376.626953125">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="landingStart" layoutX="241.0" layoutY="422.0" mnemonicParsing="false" onAction="#landingStartHandle" prefHeight="49.0" prefWidth="321.0" text="START MESSAGING" textFill="#00aeff">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.mainView.MainAppController">
+   <children>
+      <JFXTextField fx:id="txt" alignment="CENTER" layoutX="103.0" layoutY="116.0" unFocusColor="BLACK" AnchorPane.bottomAnchor="161.0" AnchorPane.rightAnchor="-0.75">
+         <font>
+            <Font size="64.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </opaqueInsets>
+      </JFXTextField>
+   </children>
+</AnchorPane>

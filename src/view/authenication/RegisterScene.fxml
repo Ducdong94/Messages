@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.authenicationController.RegisterController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="274.0" style="-fx-background-color: a4c5e0;">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="105.0" layoutX="92.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="167.0" prefHeight="42.0" prefWidth="179.0" text=" Messages Demo" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Chalkduster" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+      <Pane layoutX="354.0" layoutY="28.0" prefHeight="546.0" prefWidth="364.0">
+         <children>
+            <TextField fx:id="registerUsername" layoutX="107.0" layoutY="35.0" prefHeight="27.0" prefWidth="257.0" />
+            <TextField fx:id="registerPass" layoutX="107.0" layoutY="87.0" prefHeight="27.0" prefWidth="257.0" />
+            <TextField fx:id="registerRePass" layoutX="107.0" layoutY="138.0" prefHeight="27.0" prefWidth="257.0" />
+            <TextField fx:id="registerPhone" layoutX="107.0" layoutY="184.0" prefHeight="27.0" prefWidth="257.0" />
+            <TextField fx:id="registerFullName" layoutX="107.0" layoutY="228.0" prefHeight="27.0" prefWidth="257.0" />
+            <TextField fx:id="registerEmail" layoutX="107.0" layoutY="272.0" prefHeight="27.0" prefWidth="257.0" />
+            <ComboBox fx:id="registerComboDay" layoutX="105.0" layoutY="316.0" prefHeight="27.0" prefWidth="62.0" />
+            <ComboBox fx:id="registerComboMonth" layoutX="175.0" layoutY="316.0" prefHeight="27.0" prefWidth="68.0" />
+            <ComboBox fx:id="registerComboYear" layoutX="252.0" layoutY="316.0" prefHeight="27.0" prefWidth="107.0" />
+            <RadioButton fx:id="registerGenterMale" layoutX="107.0" layoutY="362.0" mnemonicParsing="false" text="Male" />
+            <RadioButton fx:id="registerGenterFemale" layoutX="178.0" layoutY="362.0" mnemonicParsing="false" text="Female" />
+            <RadioButton fx:id="registerGenterOther" layoutX="264.0" layoutY="362.0" mnemonicParsing="false" text="Other" />
+            <TextField fx:id="registerCapcha" layoutX="108.0" layoutY="399.0" prefHeight="27.0" prefWidth="114.0" />
+            <Button layoutX="106.0" layoutY="456.0" mnemonicParsing="false" onAction="#registerHandle" prefHeight="34.0" prefWidth="257.0" text="Register" textFill="#0f96f5" />
+            <Label layoutY="92.0" prefHeight="17.0" prefWidth="63.0" text="Password" />
+            <Label layoutY="40.0" text="Username" />
+            <Label layoutX="2.0" layoutY="404.0" prefHeight="17.0" prefWidth="63.0" text="Capcha" />
+            <Label layoutX="242.0" layoutY="401.0" prefHeight="23.0" prefWidth="107.0" text="Capcha">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutY="233.0" prefHeight="17.0" prefWidth="63.0" text="Fullname" />
+            <Label layoutY="277.0" prefHeight="17.0" prefWidth="63.0" text="Email" />
+            <Label layoutY="362.0" prefHeight="17.0" prefWidth="63.0" text="Gender" />
+            <Label layoutY="143.0" prefHeight="17.0" prefWidth="84.0" text="Re-password" />
+            <Label layoutY="189.0" prefHeight="17.0" prefWidth="63.0" text="Phone" />
+            <Label layoutX="-2.0" layoutY="321.0" prefHeight="17.0" prefWidth="63.0" text="Birthday" />
+            <Label fx:id="lblUsernameErr" layoutX="107.0" layoutY="67.0" textFill="RED" wrapText="true" />
+            <Label fx:id="lblPasswordErr" layoutX="107.0" layoutY="118.0" textFill="RED" />
+            <Label fx:id="lblRepassErr" layoutX="107.0" layoutY="166.0" textFill="RED" />
+            <Label layoutX="107.0" layoutY="211.0" textFill="RED" />
+            <Label layoutX="107.0" layoutY="255.0" textFill="RED" />
+            <Label layoutX="107.0" layoutY="299.0" textFill="RED" />
+            <Label layoutX="107.0" layoutY="343.0" textFill="RED" />
+            <Label layoutX="107.0" layoutY="381.0" textFill="RED" />
+            <Label layoutX="107.0" layoutY="430.0" textFill="RED" />
+            <Hyperlink layoutX="323.0" layoutY="502.0" onAction="#switchToSignin" text="here" />
+            <Label layoutX="125.0" layoutY="505.0" prefHeight="17.0" prefWidth="203.0" text="Already have an account? Signin " />
+            <Label fx:id="lblErrorsMessage" layoutX="108.0" layoutY="6.0" textFill="RED" />
+         </children>
+      </Pane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
