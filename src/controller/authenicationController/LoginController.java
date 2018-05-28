@@ -68,10 +68,13 @@ public class LoginController implements Initializable {
 
     @FXML
     private void switchToForgotpassword(ActionEvent event) throws IOException {
+        
         Parent root = FXMLLoader.load(getClass().getResource("/view/authenication/ForgotPasswordScene.fxml"));
         Scene scene = new Scene(root);
         MainThread.getStage().setScene(scene);
+        
     }
+    
 
     @FXML
     private void signinHandle() throws IOException {

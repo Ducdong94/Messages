@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.paint.*?>
@@ -10,15 +11,36 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.mainView.MainAppController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.mainView.MainAppController">
    <children>
-      <JFXTextField fx:id="txt" alignment="CENTER" layoutX="103.0" layoutY="116.0" unFocusColor="BLACK" AnchorPane.bottomAnchor="161.0" AnchorPane.rightAnchor="-0.75">
-         <font>
-            <Font size="64.0" />
-         </font>
+      <Pane layoutX="284.0" layoutY="61.0" prefHeight="537.0" prefWidth="527.0">
+         <children>
+            <JFXButton fx:id="btnSend" layoutX="460.0" layoutY="504.0" onAction="#send" prefHeight="33.0" prefWidth="68.0" text="Send" />
+            <JFXTextField fx:id="txtInput" layoutX="2.0" layoutY="507.0" prefHeight="27.0" prefWidth="458.0" />
+            <ScrollPane layoutY="-1.0" prefHeight="501.0" prefViewportHeight="200.0" prefViewportWidth="200.0" prefWidth="527.0">
+               <content>
+                  <TextFlow fx:id="txtFlowContent" layoutX="82.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane prefHeight="600.0" prefWidth="284.0">
          <opaqueInsets>
-            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+            <Insets />
          </opaqueInsets>
-      </JFXTextField>
+         <children>
+            <ListView fx:id="listViewUser" prefHeight="600.0" prefWidth="284.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="284.0" prefHeight="61.0" prefWidth="527.0">
+         <children>
+            <Label layoutX="16.0" layoutY="33.0" prefHeight="17.0" prefWidth="168.0" text="Time" textFill="#000000a5" />
+            <Text layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="253.21875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

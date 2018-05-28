@@ -28,7 +28,9 @@ public class MainThread extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         
-        Parent root = FXMLLoader.load(getClass().getResource("authenication/LandingScene.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("authenication/LandingScene.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("mainView/MainAppScene.fxml"));
+
         Scene scene = new Scene(root);
         this.stage = stage;
         stage.setScene(scene);
